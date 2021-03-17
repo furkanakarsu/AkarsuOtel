@@ -17,7 +17,7 @@ namespace AkarsuOtel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KurFormu());
+            Application.Run(new IslemlerFormu());
         }
     }
 }
