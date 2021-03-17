@@ -102,3 +102,4 @@ C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\Akar
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.BirimForm.resources
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.KurFormu.resources
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.IslemlerFormu.resources
+C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.TanımlamaYonlendir.resources
