@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OtelDBModelStoreContainer" CdmEntityContainer="OtelDBEntities">
+    <EntitySetMapping Name="BANKA">
+      <EntityTypeMapping TypeName="OtelDBModel.BANKA">
+        <MappingFragment StoreEntitySet="BANKA">
+          <ScalarProperty Name="BANKAID" ColumnName="BANKAID" />
+          <ScalarProperty Name="SUBE" ColumnName="SUBE" />
+          <ScalarProperty Name="BANKAADI" ColumnName="BANKAADI" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="KUR" ColumnName="KUR" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BANKAHAREKET">
+      <EntityTypeMapping TypeName="OtelDBModel.BANKAHAREKET">
+        <MappingFragment StoreEntitySet="BANKAHAREKET">
+          <ScalarProperty Name="BANKAHAREKETID" ColumnName="BANKAHAREKETID" />
+          <ScalarProperty Name="HESAPID" ColumnName="HESAPID" />
+          <ScalarProperty Name="DEKONT" ColumnName="DEKONT" />
+          <ScalarProperty Name="GIREN" ColumnName="GIREN" />
+          <ScalarProperty Name="CIKAN" ColumnName="CIKAN" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
+          <ScalarProperty Name="PERSONEL" ColumnName="PERSONEL" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BIRIM">
+      <EntityTypeMapping TypeName="OtelDBModel.BIRIM">
+        <MappingFragment StoreEntitySet="BIRIM">
+          <ScalarProperty Name="BIRIMID" ColumnName="BIRIMID" />
+          <ScalarProperty Name="BIRIMAD" ColumnName="BIRIMAD" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARI">
+      <EntityTypeMapping TypeName="OtelDBModel.CARI">
+        <MappingFragment StoreEntitySet="CARI">
+          <ScalarProperty Name="CARIID" ColumnName="CARIID" />
+          <ScalarProperty Name="CARIADSOYAD" ColumnName="CARIADSOYAD" />
+          <ScalarProperty Name="CARIADRES" ColumnName="CARIADRES" />
+          <ScalarProperty Name="CARITC" ColumnName="CARITC" />
+          <ScalarProperty Name="VERGIDAIRESI" ColumnName="VERGIDAIRESI" />
+          <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="KIMLIKFOTO1" ColumnName="KIMLIKFOTO1" />
+          <ScalarProperty Name="KIMLIKFOTO2" ColumnName="KIMLIKFOTO2" />
+          <ScalarProperty Name="CARITUR" ColumnName="CARITUR" />
+          <ScalarProperty Name="YETKILI" ColumnName="YETKILI" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="UYRUK" ColumnName="UYRUK" />
+          <ScalarProperty Name="BAKIYE" ColumnName="BAKIYE" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARIHAREKET">
+      <EntityTypeMapping TypeName="OtelDBModel.CARIHAREKET">
+        <MappingFragment StoreEntitySet="CARIHAREKET">
+          <ScalarProperty Name="CARIHAREKETID" ColumnName="CARIHAREKETID" />
+          <ScalarProperty Name="CARIID" ColumnName="CARIID" />
+          <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
+          <ScalarProperty Name="BELGENO" ColumnName="BELGENO" />
+          <ScalarProperty Name="KUR" ColumnName="KUR" />
+          <ScalarProperty Name="NAKIT" ColumnName="NAKIT" />
+          <ScalarProperty Name="KREDIKARTI" ColumnName="KREDIKARTI" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="PERSONEL" ColumnName="PERSONEL" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARIKONUKHAREKET">
+      <EntityTypeMapping TypeName="OtelDBModel.CARIKONUKHAREKET">
+        <MappingFragment StoreEntitySet="CARIKONUKHAREKET">
+          <ScalarProperty Name="CARIKONUKHAREKETID" ColumnName="CARIKONUKHAREKETID" />
+          <ScalarProperty Name="ODA" ColumnName="ODA" />
+          <ScalarProperty Name="CARI" ColumnName="CARI" />
+          <ScalarProperty Name="PERSONEL" ColumnName="PERSONEL" />
+          <ScalarProperty Name="GIRISTARIHI" ColumnName="GIRISTARIHI" />
+          <ScalarProperty Name="CIKISTARIHI" ColumnName="CIKISTARIHI" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARITUR">
+      <EntityTypeMapping TypeName="OtelDBModel.CARITUR">
+        <MappingFragment StoreEntitySet="CARITUR">
+          <ScalarProperty Name="CARITURID" ColumnName="CARITURID" />
+          <ScalarProperty Name="CARITURAD" ColumnName="CARITURAD" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPARTMAN">
+      <EntityTypeMapping TypeName="OtelDBModel.DEPARTMAN">
+        <MappingFragment StoreEntitySet="DEPARTMAN">
+          <ScalarProperty Name="DEPARTMANID" ColumnName="DEPARTMANID" />
+          <ScalarProperty Name="DEPARTMANAD" ColumnName="DEPARTMANAD" />
+          <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DURUM">
+      <EntityTypeMapping TypeName="OtelDBModel.DURUM">
+        <MappingFragment StoreEntitySet="DURUM">
+          <ScalarProperty Name="DURUMID" ColumnName="DURUMID" />
+          <ScalarProperty Name="DURUMAD" ColumnName="DURUMAD" />
+          <ScalarProperty Name="KATEGORI" ColumnName="KATEGORI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GOREV">
+      <EntityTypeMapping TypeName="OtelDBModel.GOREV">
+        <MappingFragment StoreEntitySet="GOREV">
+          <ScalarProperty Name="GOREVID" ColumnName="GOREVID" />
+          <ScalarProperty Name="GOREVAD" ColumnName="GOREVAD" />
+          <ScalarProperty Name="DEPARTMAN" ColumnName="DEPARTMAN" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ISLEM">
+      <EntityTypeMapping TypeName="OtelDBModel.ISLEM">
+        <MappingFragment StoreEntitySet="ISLEM">
+          <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
+          <ScalarProperty Name="ISLEMAD" ColumnName="ISLEMAD" />
+          <ScalarProperty Name="KATEGORI" ColumnName="KATEGORI" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KASA">
+      <EntityTypeMapping TypeName="OtelDBModel.KASA">
+        <MappingFragment StoreEntitySet="KASA">
+          <ScalarProperty Name="KASAID" ColumnName="KASAID" />
+          <ScalarProperty Name="KASAADI" ColumnName="KASAADI" />
+          <ScalarProperty Name="BAKIYE" ColumnName="BAKIYE" />
+          <ScalarProperty Name="GIREN" ColumnName="GIREN" />
+          <ScalarProperty Name="CIKAN" ColumnName="CIKAN" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KASAHAREKET">
+      <EntityTypeMapping TypeName="OtelDBModel.KASAHAREKET">
+        <MappingFragment StoreEntitySet="KASAHAREKET">
+          <ScalarProperty Name="KASAHAREKETID" ColumnName="KASAHAREKETID" />
+          <ScalarProperty Name="KASAID" ColumnName="KASAID" />
+          <ScalarProperty Name="KASABELGENO" ColumnName="KASABELGENO" />
+          <ScalarProperty Name="GIREN" ColumnName="GIREN" />
+          <ScalarProperty Name="CIKAN" ColumnName="CIKAN" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
+          <ScalarProperty Name="PERSONEL" ColumnName="PERSONEL" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KURLAR">
+      <EntityTypeMapping TypeName="OtelDBModel.KURLAR">
+        <MappingFragment StoreEntitySet="KURLAR">
+          <ScalarProperty Name="KURID" ColumnName="KURID" />
+          <ScalarProperty Name="KURAD" ColumnName="KURAD" />
+          <ScalarProperty Name="KURSEMBOL" ColumnName="KURSEMBOL" />
+          <ScalarProperty Name="KURDEGER" ColumnName="KURDEGER" />
+          <ScalarProperty Name="GUNCELLEMETARIHI" ColumnName="GUNCELLEMETARIHI" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ODALAR">
+      <EntityTypeMapping TypeName="OtelDBModel.ODALAR">
+        <MappingFragment StoreEntitySet="ODALAR">
+          <ScalarProperty Name="ODAID" ColumnName="ODAID" />
+          <ScalarProperty Name="ODANO" ColumnName="ODANO" />
+          <ScalarProperty Name="KAT" ColumnName="KAT" />
+          <ScalarProperty Name="KAPASITE" ColumnName="KAPASITE" />
+          <ScalarProperty Name="OZELLIK" ColumnName="OZELLIK" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONEL">
+      <EntityTypeMapping TypeName="OtelDBModel.PERSONEL">
+        <MappingFragment StoreEntitySet="PERSONEL">
+          <ScalarProperty Name="PERSONELID" ColumnName="PERSONELID" />
+          <ScalarProperty Name="ADSOYAD" ColumnName="ADSOYAD" />
+          <ScalarProperty Name="PERSONELTC" ColumnName="PERSONELTC" />
+          <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+          <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="KANGRUBU" ColumnName="KANGRUBU" />
+          <ScalarProperty Name="ISEGIRISTARIHI" ColumnName="ISEGIRISTARIHI" />
+          <ScalarProperty Name="ISTENCIKISTARIHI" ColumnName="ISTENCIKISTARIHI" />
+          <ScalarProperty Name="DEPARTMAN" ColumnName="DEPARTMAN" />
+          <ScalarProperty Name="GOREV" ColumnName="GOREV" />
+          <ScalarProperty Name="YETKI" ColumnName="YETKI" />
+          <ScalarProperty Name="SIFRE" ColumnName="SIFRE" />
+          <ScalarProperty Name="KIMLIKON" ColumnName="KIMLIKON" />
+          <ScalarProperty Name="KIMLIKARKA" ColumnName="KIMLIKARKA" />
+          <ScalarProperty Name="EHLIYET" ColumnName="EHLIYET" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REZERVASYON">
+      <EntityTypeMapping TypeName="OtelDBModel.REZERVASYON">
+        <MappingFragment StoreEntitySet="REZERVASYON">
+          <ScalarProperty Name="REZERVASYONID" ColumnName="REZERVASYONID" />
+          <ScalarProperty Name="CARI" ColumnName="CARI" />
+          <ScalarProperty Name="GIRISTARIHI" ColumnName="GIRISTARIHI" />
+          <ScalarProperty Name="CIKISTARIHI" ColumnName="CIKISTARIHI" />
+          <ScalarProperty Name="KISISAYISI" ColumnName="KISISAYISI" />
+          <ScalarProperty Name="ODA" ColumnName="ODA" />
+          <ScalarProperty Name="REZERVASYONADSOYAD" ColumnName="REZERVASYONADSOYAD" />
+          <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TELEFON">
+      <EntityTypeMapping TypeName="OtelDBModel.TELEFON">
+        <MappingFragment StoreEntitySet="TELEFON">
+          <ScalarProperty Name="TELEFONID" ColumnName="TELEFONID" />
+          <ScalarProperty Name="TELEFONNO" ColumnName="TELEFONNO" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="URUN">
+      <EntityTypeMapping TypeName="OtelDBModel.URUN">
+        <MappingFragment StoreEntitySet="URUN">
+          <ScalarProperty Name="URUNID" ColumnName="URUNID" />
+          <ScalarProperty Name="URUNAD" ColumnName="URUNAD" />
+          <ScalarProperty Name="URUNGRUPID" ColumnName="URUNGRUPID" />
+          <ScalarProperty Name="BIRIM" ColumnName="BIRIM" />
+          <ScalarProperty Name="FIYAT" ColumnName="FIYAT" />
+          <ScalarProperty Name="KUR" ColumnName="KUR" />
+          <ScalarProperty Name="GIREN" ColumnName="GIREN" />
+          <ScalarProperty Name="CIKAN" ColumnName="CIKAN" />
+          <ScalarProperty Name="KALAN" ColumnName="KALAN" />
+          <ScalarProperty Name="KDV" ColumnName="KDV" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="PERSONEL" ColumnName="PERSONEL" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="URUNGRUP">
+      <EntityTypeMapping TypeName="OtelDBModel.URUNGRUP">
+        <MappingFragment StoreEntitySet="URUNGRUP">
+          <ScalarProperty Name="URUNGRUPID" ColumnName="URUNGRUPID" />
+          <ScalarProperty Name="GRUPADI" ColumnName="GRUPADI" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UYRUK">
+      <EntityTypeMapping TypeName="OtelDBModel.UYRUK">
+        <MappingFragment StoreEntitySet="UYRUK">
+          <ScalarProperty Name="UYRUKID" ColumnName="UYRUKID" />
+          <ScalarProperty Name="ULKEAD" ColumnName="ULKEAD" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

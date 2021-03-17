@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a01740b3cc7645f98790bf59bdaf01d0" Name="Diagram1">
+        <EntityTypeShape EntityType="OtelDBModel.BANKA" Width="1.5" PointX="5.25" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.BANKAHAREKET" Width="1.5" PointX="10.75" PointY="29.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.BIRIM" Width="1.5" PointX="3" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.CARI" Width="1.5" PointX="5.25" PointY="38.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.CARIHAREKET" Width="1.5" PointX="10.75" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.CARIKONUKHAREKET" Width="1.5" PointX="13.75" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.CARITUR" Width="1.5" PointX="3" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.DEPARTMAN" Width="1.5" PointX="3" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.DURUM" Width="1.5" PointX="0.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.GOREV" Width="1.5" PointX="5.25" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.ISLEM" Width="1.5" PointX="3" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.KASA" Width="1.5" PointX="3" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.KASAHAREKET" Width="1.5" PointX="13.75" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.KURLAR" Width="1.5" PointX="3" PointY="39.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.ODALAR" Width="1.5" PointX="3" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.PERSONEL" Width="1.5" PointX="7.5" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.REZERVASYON" Width="1.5" PointX="7.5" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.TELEFON" Width="1.5" PointX="3" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.URUN" Width="1.5" PointX="8.25" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.URUNGRUP" Width="1.5" PointX="3" PointY="50" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.UYRUK" Width="1.5" PointX="3" PointY="52.75" IsExpanded="true" />
+        <AssociationConnector Association="OtelDBModel.FK_BANKA_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_BANKA_KURLAR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_BANKAHAREKET_BANKA" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_BANKAHAREKET_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_BANKAHAREKET_ISLEM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_BANKAHAREKET_PERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_BIRIM_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_URUN_BIRIM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARI_CARITUR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARI_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARI_UYRUK" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARIHAREKET_CARI" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARIKONUKHAREKET_CARI" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_REZERVASYON_CARI" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARIHAREKET_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARIHAREKET_ISLEM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARIHAREKET_KURLAR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARIHAREKET_PERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARIKONUKHAREKET_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARIKONUKHAREKET_ODALAR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARIKONUKHAREKET_PERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_CARITUR_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_DEPARTMAN_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_GOREV_DEPARTMAN" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_PERSONEL_DEPARTMAN" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_GOREV_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_ISLEM_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_KASA_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_KASAHAREKET_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_KURLAR_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_ODALAR_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_PERSONEL_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_REZERVASYON_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_TELEFON_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_URUN_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_URUNGRUP_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_UYRUK_DURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_PERSONEL_GOREV" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_KASAHAREKET_ISLEM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_KASAHAREKET_KASA" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_KASAHAREKET_PERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_REZERVASYON_ODALAR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_URUN_PERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelDBModel.FK_URUN_URUNGRUP" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
