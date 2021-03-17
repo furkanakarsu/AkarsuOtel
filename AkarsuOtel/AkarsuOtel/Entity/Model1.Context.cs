@@ -33,7 +33,6 @@ namespace AkarsuOtel.Entity
         public virtual DbSet<CARIKONUKHAREKET> CARIKONUKHAREKET { get; set; }
         public virtual DbSet<CARITUR> CARITUR { get; set; }
         public virtual DbSet<DEPARTMAN> DEPARTMAN { get; set; }
-        public virtual DbSet<DURUM> DURUM { get; set; }
         public virtual DbSet<GOREV> GOREV { get; set; }
         public virtual DbSet<ISLEM> ISLEM { get; set; }
         public virtual DbSet<KASA> KASA { get; set; }
@@ -42,6 +41,8 @@ namespace AkarsuOtel.Entity
         public virtual DbSet<ODALAR> ODALAR { get; set; }
         public virtual DbSet<PERSONEL> PERSONEL { get; set; }
         public virtual DbSet<REZERVASYON> REZERVASYON { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<TBLDURUM> TBLDURUM { get; set; }
         public virtual DbSet<TELEFON> TELEFON { get; set; }
         public virtual DbSet<URUN> URUN { get; set; }
         public virtual DbSet<URUNGRUP> URUNGRUP { get; set; }

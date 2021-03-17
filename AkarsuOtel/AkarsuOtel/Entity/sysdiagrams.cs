@@ -12,13 +12,12 @@ namespace AkarsuOtel.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class TELEFON
+    public partial class sysdiagrams
     {
-        public int TELEFONID { get; set; }
-        public string TELEFONNO { get; set; }
-        public string ACIKLAMA { get; set; }
-        public Nullable<int> DURUM { get; set; }
-    
-        public virtual TBLDURUM TBLDURUM { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

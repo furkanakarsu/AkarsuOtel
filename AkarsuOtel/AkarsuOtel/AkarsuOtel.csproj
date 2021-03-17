@@ -87,9 +87,6 @@
     <Compile Include="Entity\DEPARTMAN.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entity\DURUM.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entity\GOREV.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -129,6 +126,12 @@
     <Compile Include="Entity\REZERVASYON.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\TBLDURUM.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\TELEFON.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -147,6 +150,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTanımlamaları\DepartmanFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanımlamaları\DepartmanFormu.Designer.cs">
+      <DependentUpon>DepartmanFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTanımlamaları\DurumFormu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +166,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanımlamaları\DepartmanFormu.resx">
+      <DependentUpon>DepartmanFormu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTanımlamaları\DurumFormu.resx">
       <DependentUpon>DurumFormu.cs</DependentUpon>
@@ -192,12 +204,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Entity\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

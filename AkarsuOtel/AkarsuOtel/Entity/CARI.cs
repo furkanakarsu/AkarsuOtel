@@ -39,7 +39,7 @@ namespace AkarsuOtel.Entity
         public Nullable<int> DURUM { get; set; }
     
         public virtual CARITUR CARITUR1 { get; set; }
-        public virtual DURUM DURUM1 { get; set; }
+        public virtual TBLDURUM TBLDURUM { get; set; }
         public virtual UYRUK UYRUK1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CARIHAREKET> CARIHAREKET { get; set; }

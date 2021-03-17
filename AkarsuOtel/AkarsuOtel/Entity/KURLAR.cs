@@ -32,6 +32,6 @@ namespace AkarsuOtel.Entity
         public virtual ICollection<BANKA> BANKA { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CARIHAREKET> CARIHAREKET { get; set; }
-        public virtual DURUM DURUM1 { get; set; }
+        public virtual TBLDURUM TBLDURUM { get; set; }
     }
 }

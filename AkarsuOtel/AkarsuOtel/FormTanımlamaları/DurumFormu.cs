@@ -22,8 +22,8 @@ namespace AkarsuOtel.FormTanımlamaları
         OtelDBEntities db = new OtelDBEntities();
         private void DurumFormu_Load(object sender, EventArgs e)
         {
-            db.DURUM.Load();
-            bindingSource1.DataSource = db.DURUM.Local;
+            db.TBLDURUM.Load();
+            bindingSource1.DataSource = db.TBLDURUM.Local;
         }
 
         private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)

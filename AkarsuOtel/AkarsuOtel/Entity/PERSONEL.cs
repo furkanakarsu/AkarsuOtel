@@ -50,10 +50,10 @@ namespace AkarsuOtel.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CARIKONUKHAREKET> CARIKONUKHAREKET { get; set; }
         public virtual DEPARTMAN DEPARTMAN1 { get; set; }
-        public virtual DURUM DURUM1 { get; set; }
         public virtual GOREV GOREV1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<KASAHAREKET> KASAHAREKET { get; set; }
+        public virtual TBLDURUM TBLDURUM { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<URUN> URUN { get; set; }
     }

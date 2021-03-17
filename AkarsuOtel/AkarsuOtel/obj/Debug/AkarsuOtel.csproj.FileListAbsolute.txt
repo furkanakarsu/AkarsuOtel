@@ -97,3 +97,4 @@ C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\Akar
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.csproj.CopyComplete
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.exe
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.pdb
+C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.DepartmanFormu.resources

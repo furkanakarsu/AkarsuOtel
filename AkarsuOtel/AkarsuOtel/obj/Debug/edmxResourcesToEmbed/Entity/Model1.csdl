@@ -10,7 +10,7 @@
     <Property Name="IBAN" Type="String" MaxLength="26" FixedLength="false" Unicode="false" />
     <Property Name="KUR" Type="Int32" />
     <Property Name="DURUM" Type="Int32" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_BANKA_DURUM" FromRole="BANKA" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_BANKA_DURUM" FromRole="BANKA" ToRole="TBLDURUM" />
     <NavigationProperty Name="KURLAR" Relationship="Self.FK_BANKA_KURLAR" FromRole="BANKA" ToRole="KURLAR" />
     <NavigationProperty Name="BANKAHAREKET" Relationship="Self.FK_BANKAHAREKET_BANKA" FromRole="BANKA" ToRole="BANKAHAREKET" />
   </EntityType>
@@ -29,7 +29,7 @@
     <Property Name="PERSONEL" Type="Int32" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="BANKA" Relationship="Self.FK_BANKAHAREKET_BANKA" FromRole="BANKAHAREKET" ToRole="BANKA" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_BANKAHAREKET_DURUM" FromRole="BANKAHAREKET" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_BANKAHAREKET_DURUM" FromRole="BANKAHAREKET" ToRole="TBLDURUM" />
     <NavigationProperty Name="ISLEM" Relationship="Self.FK_BANKAHAREKET_ISLEM" FromRole="BANKAHAREKET" ToRole="ISLEM" />
     <NavigationProperty Name="PERSONEL1" Relationship="Self.FK_BANKAHAREKET_PERSONEL" FromRole="BANKAHAREKET" ToRole="PERSONEL" />
   </EntityType>
@@ -40,7 +40,7 @@
     <Property Name="BIRIMID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="BIRIMAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="DURUM" Type="Int32" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_BIRIM_DURUM" FromRole="BIRIM" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_BIRIM_DURUM" FromRole="BIRIM" ToRole="TBLDURUM" />
     <NavigationProperty Name="URUN" Relationship="Self.FK_URUN_BIRIM" FromRole="BIRIM" ToRole="URUN" />
   </EntityType>
   <EntityType Name="CARI">
@@ -63,7 +63,7 @@
     <Property Name="BAKIYE" Type="Decimal" Precision="18" Scale="2" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="CARITUR1" Relationship="Self.FK_CARI_CARITUR" FromRole="CARI" ToRole="CARITUR" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_CARI_DURUM" FromRole="CARI" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_CARI_DURUM" FromRole="CARI" ToRole="TBLDURUM" />
     <NavigationProperty Name="UYRUK1" Relationship="Self.FK_CARI_UYRUK" FromRole="CARI" ToRole="UYRUK" />
     <NavigationProperty Name="CARIHAREKET" Relationship="Self.FK_CARIHAREKET_CARI" FromRole="CARI" ToRole="CARIHAREKET" />
     <NavigationProperty Name="CARIKONUKHAREKET" Relationship="Self.FK_CARIKONUKHAREKET_CARI" FromRole="CARI" ToRole="CARIKONUKHAREKET" />
@@ -85,7 +85,7 @@
     <Property Name="PERSONEL" Type="Int32" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="CARI" Relationship="Self.FK_CARIHAREKET_CARI" FromRole="CARIHAREKET" ToRole="CARI" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_CARIHAREKET_DURUM" FromRole="CARIHAREKET" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_CARIHAREKET_DURUM" FromRole="CARIHAREKET" ToRole="TBLDURUM" />
     <NavigationProperty Name="ISLEM" Relationship="Self.FK_CARIHAREKET_ISLEM" FromRole="CARIHAREKET" ToRole="ISLEM" />
     <NavigationProperty Name="KURLAR" Relationship="Self.FK_CARIHAREKET_KURLAR" FromRole="CARIHAREKET" ToRole="KURLAR" />
     <NavigationProperty Name="PERSONEL1" Relationship="Self.FK_CARIHAREKET_PERSONEL" FromRole="CARIHAREKET" ToRole="PERSONEL" />
@@ -103,7 +103,7 @@
     <Property Name="ACIKLAMA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="CARI1" Relationship="Self.FK_CARIKONUKHAREKET_CARI" FromRole="CARIKONUKHAREKET" ToRole="CARI" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_CARIKONUKHAREKET_DURUM" FromRole="CARIKONUKHAREKET" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_CARIKONUKHAREKET_DURUM" FromRole="CARIKONUKHAREKET" ToRole="TBLDURUM" />
     <NavigationProperty Name="ODALAR" Relationship="Self.FK_CARIKONUKHAREKET_ODALAR" FromRole="CARIKONUKHAREKET" ToRole="ODALAR" />
     <NavigationProperty Name="PERSONEL1" Relationship="Self.FK_CARIKONUKHAREKET_PERSONEL" FromRole="CARIKONUKHAREKET" ToRole="PERSONEL" />
   </EntityType>
@@ -115,7 +115,7 @@
     <Property Name="CARITURAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="CARI" Relationship="Self.FK_CARI_CARITUR" FromRole="CARITUR" ToRole="CARI" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_CARITUR_DURUM" FromRole="CARITUR" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_CARITUR_DURUM" FromRole="CARITUR" ToRole="TBLDURUM" />
   </EntityType>
   <EntityType Name="DEPARTMAN">
     <Key>
@@ -125,37 +125,9 @@
     <Property Name="DEPARTMANAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="TELEFON" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
     <Property Name="DURUM" Type="Int32" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_DEPARTMAN_DURUM" FromRole="DEPARTMAN" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_DEPARTMAN_DURUM" FromRole="DEPARTMAN" ToRole="TBLDURUM" />
     <NavigationProperty Name="GOREV" Relationship="Self.FK_GOREV_DEPARTMAN" FromRole="DEPARTMAN" ToRole="GOREV" />
     <NavigationProperty Name="PERSONEL" Relationship="Self.FK_PERSONEL_DEPARTMAN" FromRole="DEPARTMAN" ToRole="PERSONEL" />
-  </EntityType>
-  <EntityType Name="DURUM">
-    <Key>
-      <PropertyRef Name="DURUMID" />
-    </Key>
-    <Property Name="DURUMID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="DURUMAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="KATEGORI" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="BANKA" Relationship="Self.FK_BANKA_DURUM" FromRole="DURUM" ToRole="BANKA" />
-    <NavigationProperty Name="BANKAHAREKET" Relationship="Self.FK_BANKAHAREKET_DURUM" FromRole="DURUM" ToRole="BANKAHAREKET" />
-    <NavigationProperty Name="BIRIM" Relationship="Self.FK_BIRIM_DURUM" FromRole="DURUM" ToRole="BIRIM" />
-    <NavigationProperty Name="CARI" Relationship="Self.FK_CARI_DURUM" FromRole="DURUM" ToRole="CARI" />
-    <NavigationProperty Name="CARIHAREKET" Relationship="Self.FK_CARIHAREKET_DURUM" FromRole="DURUM" ToRole="CARIHAREKET" />
-    <NavigationProperty Name="CARIKONUKHAREKET" Relationship="Self.FK_CARIKONUKHAREKET_DURUM" FromRole="DURUM" ToRole="CARIKONUKHAREKET" />
-    <NavigationProperty Name="CARITUR" Relationship="Self.FK_CARITUR_DURUM" FromRole="DURUM" ToRole="CARITUR" />
-    <NavigationProperty Name="DEPARTMAN" Relationship="Self.FK_DEPARTMAN_DURUM" FromRole="DURUM" ToRole="DEPARTMAN" />
-    <NavigationProperty Name="GOREV" Relationship="Self.FK_GOREV_DURUM" FromRole="DURUM" ToRole="GOREV" />
-    <NavigationProperty Name="ISLEM" Relationship="Self.FK_ISLEM_DURUM" FromRole="DURUM" ToRole="ISLEM" />
-    <NavigationProperty Name="KASA" Relationship="Self.FK_KASA_DURUM" FromRole="DURUM" ToRole="KASA" />
-    <NavigationProperty Name="KASAHAREKET" Relationship="Self.FK_KASAHAREKET_DURUM" FromRole="DURUM" ToRole="KASAHAREKET" />
-    <NavigationProperty Name="KURLAR" Relationship="Self.FK_KURLAR_DURUM" FromRole="DURUM" ToRole="KURLAR" />
-    <NavigationProperty Name="ODALAR" Relationship="Self.FK_ODALAR_DURUM" FromRole="DURUM" ToRole="ODALAR" />
-    <NavigationProperty Name="PERSONEL" Relationship="Self.FK_PERSONEL_DURUM" FromRole="DURUM" ToRole="PERSONEL" />
-    <NavigationProperty Name="REZERVASYON" Relationship="Self.FK_REZERVASYON_DURUM" FromRole="DURUM" ToRole="REZERVASYON" />
-    <NavigationProperty Name="TELEFON" Relationship="Self.FK_TELEFON_DURUM" FromRole="DURUM" ToRole="TELEFON" />
-    <NavigationProperty Name="URUN" Relationship="Self.FK_URUN_DURUM" FromRole="DURUM" ToRole="URUN" />
-    <NavigationProperty Name="URUNGRUP" Relationship="Self.FK_URUNGRUP_DURUM" FromRole="DURUM" ToRole="URUNGRUP" />
-    <NavigationProperty Name="UYRUK" Relationship="Self.FK_UYRUK_DURUM" FromRole="DURUM" ToRole="UYRUK" />
   </EntityType>
   <EntityType Name="GOREV">
     <Key>
@@ -166,7 +138,7 @@
     <Property Name="DEPARTMAN" Type="Int32" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="DEPARTMAN1" Relationship="Self.FK_GOREV_DEPARTMAN" FromRole="GOREV" ToRole="DEPARTMAN" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_GOREV_DURUM" FromRole="GOREV" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_GOREV_DURUM" FromRole="GOREV" ToRole="TBLDURUM" />
     <NavigationProperty Name="PERSONEL" Relationship="Self.FK_PERSONEL_GOREV" FromRole="GOREV" ToRole="PERSONEL" />
   </EntityType>
   <EntityType Name="ISLEM">
@@ -179,7 +151,7 @@
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="BANKAHAREKET" Relationship="Self.FK_BANKAHAREKET_ISLEM" FromRole="ISLEM" ToRole="BANKAHAREKET" />
     <NavigationProperty Name="CARIHAREKET" Relationship="Self.FK_CARIHAREKET_ISLEM" FromRole="ISLEM" ToRole="CARIHAREKET" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_ISLEM_DURUM" FromRole="ISLEM" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_ISLEM_DURUM" FromRole="ISLEM" ToRole="TBLDURUM" />
     <NavigationProperty Name="KASAHAREKET" Relationship="Self.FK_KASAHAREKET_ISLEM" FromRole="ISLEM" ToRole="KASAHAREKET" />
   </EntityType>
   <EntityType Name="KASA">
@@ -192,7 +164,7 @@
     <Property Name="GIREN" Type="Decimal" Precision="18" Scale="2" />
     <Property Name="CIKAN" Type="Decimal" Precision="18" Scale="2" />
     <Property Name="DURUM" Type="Int32" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_KASA_DURUM" FromRole="KASA" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_KASA_DURUM" FromRole="KASA" ToRole="TBLDURUM" />
     <NavigationProperty Name="KASAHAREKET" Relationship="Self.FK_KASAHAREKET_KASA" FromRole="KASA" ToRole="KASAHAREKET" />
   </EntityType>
   <EntityType Name="KASAHAREKET">
@@ -209,9 +181,9 @@
     <Property Name="ISLEMID" Type="Int32" />
     <Property Name="PERSONEL" Type="Int32" />
     <Property Name="DURUM" Type="Int32" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_KASAHAREKET_DURUM" FromRole="KASAHAREKET" ToRole="DURUM" />
     <NavigationProperty Name="ISLEM" Relationship="Self.FK_KASAHAREKET_ISLEM" FromRole="KASAHAREKET" ToRole="ISLEM" />
     <NavigationProperty Name="KASA" Relationship="Self.FK_KASAHAREKET_KASA" FromRole="KASAHAREKET" ToRole="KASA" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_KASAHAREKET_DURUM" FromRole="KASAHAREKET" ToRole="TBLDURUM" />
     <NavigationProperty Name="PERSONEL1" Relationship="Self.FK_KASAHAREKET_PERSONEL" FromRole="KASAHAREKET" ToRole="PERSONEL" />
   </EntityType>
   <EntityType Name="KURLAR">
@@ -226,7 +198,7 @@
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="BANKA" Relationship="Self.FK_BANKA_KURLAR" FromRole="KURLAR" ToRole="BANKA" />
     <NavigationProperty Name="CARIHAREKET" Relationship="Self.FK_CARIHAREKET_KURLAR" FromRole="KURLAR" ToRole="CARIHAREKET" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_KURLAR_DURUM" FromRole="KURLAR" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_KURLAR_DURUM" FromRole="KURLAR" ToRole="TBLDURUM" />
   </EntityType>
   <EntityType Name="ODALAR">
     <Key>
@@ -241,7 +213,7 @@
     <Property Name="TELEFON" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="CARIKONUKHAREKET" Relationship="Self.FK_CARIKONUKHAREKET_ODALAR" FromRole="ODALAR" ToRole="CARIKONUKHAREKET" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_ODALAR_DURUM" FromRole="ODALAR" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_ODALAR_DURUM" FromRole="ODALAR" ToRole="TBLDURUM" />
     <NavigationProperty Name="REZERVASYON" Relationship="Self.FK_REZERVASYON_ODALAR" FromRole="ODALAR" ToRole="REZERVASYON" />
   </EntityType>
   <EntityType Name="PERSONEL">
@@ -270,9 +242,9 @@
     <NavigationProperty Name="CARIHAREKET" Relationship="Self.FK_CARIHAREKET_PERSONEL" FromRole="PERSONEL" ToRole="CARIHAREKET" />
     <NavigationProperty Name="CARIKONUKHAREKET" Relationship="Self.FK_CARIKONUKHAREKET_PERSONEL" FromRole="PERSONEL" ToRole="CARIKONUKHAREKET" />
     <NavigationProperty Name="DEPARTMAN1" Relationship="Self.FK_PERSONEL_DEPARTMAN" FromRole="PERSONEL" ToRole="DEPARTMAN" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_PERSONEL_DURUM" FromRole="PERSONEL" ToRole="DURUM" />
     <NavigationProperty Name="GOREV1" Relationship="Self.FK_PERSONEL_GOREV" FromRole="PERSONEL" ToRole="GOREV" />
     <NavigationProperty Name="KASAHAREKET" Relationship="Self.FK_KASAHAREKET_PERSONEL" FromRole="PERSONEL" ToRole="KASAHAREKET" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_PERSONEL_DURUM" FromRole="PERSONEL" ToRole="TBLDURUM" />
     <NavigationProperty Name="URUN" Relationship="Self.FK_URUN_PERSONEL" FromRole="PERSONEL" ToRole="URUN" />
   </EntityType>
   <EntityType Name="REZERVASYON">
@@ -291,8 +263,46 @@
     <Property Name="ACIKLAMA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="CARI1" Relationship="Self.FK_REZERVASYON_CARI" FromRole="REZERVASYON" ToRole="CARI" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_REZERVASYON_DURUM" FromRole="REZERVASYON" ToRole="DURUM" />
     <NavigationProperty Name="ODALAR" Relationship="Self.FK_REZERVASYON_ODALAR" FromRole="REZERVASYON" ToRole="ODALAR" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_REZERVASYON_DURUM" FromRole="REZERVASYON" ToRole="TBLDURUM" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TBLDURUM">
+    <Key>
+      <PropertyRef Name="DURUMID" />
+    </Key>
+    <Property Name="DURUMID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DURUMAD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="KATEGORI" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BANKA" Relationship="Self.FK_BANKA_DURUM" FromRole="TBLDURUM" ToRole="BANKA" />
+    <NavigationProperty Name="BANKAHAREKET" Relationship="Self.FK_BANKAHAREKET_DURUM" FromRole="TBLDURUM" ToRole="BANKAHAREKET" />
+    <NavigationProperty Name="BIRIM" Relationship="Self.FK_BIRIM_DURUM" FromRole="TBLDURUM" ToRole="BIRIM" />
+    <NavigationProperty Name="CARI" Relationship="Self.FK_CARI_DURUM" FromRole="TBLDURUM" ToRole="CARI" />
+    <NavigationProperty Name="CARIHAREKET" Relationship="Self.FK_CARIHAREKET_DURUM" FromRole="TBLDURUM" ToRole="CARIHAREKET" />
+    <NavigationProperty Name="CARIKONUKHAREKET" Relationship="Self.FK_CARIKONUKHAREKET_DURUM" FromRole="TBLDURUM" ToRole="CARIKONUKHAREKET" />
+    <NavigationProperty Name="CARITUR" Relationship="Self.FK_CARITUR_DURUM" FromRole="TBLDURUM" ToRole="CARITUR" />
+    <NavigationProperty Name="DEPARTMAN" Relationship="Self.FK_DEPARTMAN_DURUM" FromRole="TBLDURUM" ToRole="DEPARTMAN" />
+    <NavigationProperty Name="GOREV" Relationship="Self.FK_GOREV_DURUM" FromRole="TBLDURUM" ToRole="GOREV" />
+    <NavigationProperty Name="ISLEM" Relationship="Self.FK_ISLEM_DURUM" FromRole="TBLDURUM" ToRole="ISLEM" />
+    <NavigationProperty Name="KASA" Relationship="Self.FK_KASA_DURUM" FromRole="TBLDURUM" ToRole="KASA" />
+    <NavigationProperty Name="KASAHAREKET" Relationship="Self.FK_KASAHAREKET_DURUM" FromRole="TBLDURUM" ToRole="KASAHAREKET" />
+    <NavigationProperty Name="KURLAR" Relationship="Self.FK_KURLAR_DURUM" FromRole="TBLDURUM" ToRole="KURLAR" />
+    <NavigationProperty Name="ODALAR" Relationship="Self.FK_ODALAR_DURUM" FromRole="TBLDURUM" ToRole="ODALAR" />
+    <NavigationProperty Name="PERSONEL" Relationship="Self.FK_PERSONEL_DURUM" FromRole="TBLDURUM" ToRole="PERSONEL" />
+    <NavigationProperty Name="REZERVASYON" Relationship="Self.FK_REZERVASYON_DURUM" FromRole="TBLDURUM" ToRole="REZERVASYON" />
+    <NavigationProperty Name="TELEFON" Relationship="Self.FK_TELEFON_DURUM" FromRole="TBLDURUM" ToRole="TELEFON" />
+    <NavigationProperty Name="URUN" Relationship="Self.FK_URUN_DURUM" FromRole="TBLDURUM" ToRole="URUN" />
+    <NavigationProperty Name="URUNGRUP" Relationship="Self.FK_URUNGRUP_DURUM" FromRole="TBLDURUM" ToRole="URUNGRUP" />
+    <NavigationProperty Name="UYRUK" Relationship="Self.FK_UYRUK_DURUM" FromRole="TBLDURUM" ToRole="UYRUK" />
   </EntityType>
   <EntityType Name="TELEFON">
     <Key>
@@ -302,7 +312,7 @@
     <Property Name="TELEFONNO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
     <Property Name="ACIKLAMA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="DURUM" Type="Int32" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_TELEFON_DURUM" FromRole="TELEFON" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_TELEFON_DURUM" FromRole="TELEFON" ToRole="TBLDURUM" />
   </EntityType>
   <EntityType Name="URUN">
     <Key>
@@ -322,8 +332,8 @@
     <Property Name="PERSONEL" Type="Int32" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="BIRIM1" Relationship="Self.FK_URUN_BIRIM" FromRole="URUN" ToRole="BIRIM" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_URUN_DURUM" FromRole="URUN" ToRole="DURUM" />
     <NavigationProperty Name="PERSONEL1" Relationship="Self.FK_URUN_PERSONEL" FromRole="URUN" ToRole="PERSONEL" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_URUN_DURUM" FromRole="URUN" ToRole="TBLDURUM" />
     <NavigationProperty Name="URUNGRUP" Relationship="Self.FK_URUN_URUNGRUP" FromRole="URUN" ToRole="URUNGRUP" />
   </EntityType>
   <EntityType Name="URUNGRUP">
@@ -333,7 +343,7 @@
     <Property Name="URUNGRUPID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="GRUPADI" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
     <Property Name="DURUM" Type="Int32" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_URUNGRUP_DURUM" FromRole="URUNGRUP" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_URUNGRUP_DURUM" FromRole="URUNGRUP" ToRole="TBLDURUM" />
     <NavigationProperty Name="URUN" Relationship="Self.FK_URUN_URUNGRUP" FromRole="URUNGRUP" ToRole="URUN" />
   </EntityType>
   <EntityType Name="UYRUK">
@@ -344,13 +354,13 @@
     <Property Name="ULKEAD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
     <Property Name="DURUM" Type="Int32" />
     <NavigationProperty Name="CARI" Relationship="Self.FK_CARI_UYRUK" FromRole="UYRUK" ToRole="CARI" />
-    <NavigationProperty Name="DURUM1" Relationship="Self.FK_UYRUK_DURUM" FromRole="UYRUK" ToRole="DURUM" />
+    <NavigationProperty Name="TBLDURUM" Relationship="Self.FK_UYRUK_DURUM" FromRole="UYRUK" ToRole="TBLDURUM" />
   </EntityType>
   <Association Name="FK_BANKA_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
     <End Role="BANKA" Type="Self.BANKA" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="DURUM">
+      <Principal Role="TBLDURUM">
         <PropertyRef Name="DURUMID" />
       </Principal>
       <Dependent Role="BANKA">
@@ -383,10 +393,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_BANKAHAREKET_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
     <End Role="BANKAHAREKET" Type="Self.BANKAHAREKET" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="DURUM">
+      <Principal Role="TBLDURUM">
         <PropertyRef Name="DURUMID" />
       </Principal>
       <Dependent Role="BANKAHAREKET">
@@ -419,10 +429,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_BIRIM_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
     <End Role="BIRIM" Type="Self.BIRIM" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="DURUM">
+      <Principal Role="TBLDURUM">
         <PropertyRef Name="DURUMID" />
       </Principal>
       <Dependent Role="BIRIM">
@@ -455,10 +465,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CARI_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
     <End Role="CARI" Type="Self.CARI" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="DURUM">
+      <Principal Role="TBLDURUM">
         <PropertyRef Name="DURUMID" />
       </Principal>
       <Dependent Role="CARI">
@@ -515,10 +525,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CARIHAREKET_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
     <End Role="CARIHAREKET" Type="Self.CARIHAREKET" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="DURUM">
+      <Principal Role="TBLDURUM">
         <PropertyRef Name="DURUMID" />
       </Principal>
       <Dependent Role="CARIHAREKET">
@@ -563,10 +573,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CARIKONUKHAREKET_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
     <End Role="CARIKONUKHAREKET" Type="Self.CARIKONUKHAREKET" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="DURUM">
+      <Principal Role="TBLDURUM">
         <PropertyRef Name="DURUMID" />
       </Principal>
       <Dependent Role="CARIKONUKHAREKET">
@@ -599,10 +609,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CARITUR_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
     <End Role="CARITUR" Type="Self.CARITUR" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="DURUM">
+      <Principal Role="TBLDURUM">
         <PropertyRef Name="DURUMID" />
       </Principal>
       <Dependent Role="CARITUR">
@@ -611,10 +621,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_DEPARTMAN_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
     <End Role="DEPARTMAN" Type="Self.DEPARTMAN" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="DURUM">
+      <Principal Role="TBLDURUM">
         <PropertyRef Name="DURUMID" />
       </Principal>
       <Dependent Role="DEPARTMAN">
@@ -647,145 +657,13 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_GOREV_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
     <End Role="GOREV" Type="Self.GOREV" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="DURUM">
+      <Principal Role="TBLDURUM">
         <PropertyRef Name="DURUMID" />
       </Principal>
       <Dependent Role="GOREV">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_ISLEM_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="ISLEM" Type="Self.ISLEM" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="ISLEM">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_KASA_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="KASA" Type="Self.KASA" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="KASA">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_KASAHAREKET_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="KASAHAREKET" Type="Self.KASAHAREKET" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="KASAHAREKET">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_KURLAR_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="KURLAR" Type="Self.KURLAR" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="KURLAR">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_ODALAR_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="ODALAR" Type="Self.ODALAR" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="ODALAR">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_PERSONEL_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="PERSONEL" Type="Self.PERSONEL" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="PERSONEL">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_REZERVASYON_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="REZERVASYON" Type="Self.REZERVASYON" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="REZERVASYON">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_TELEFON_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="TELEFON" Type="Self.TELEFON" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="TELEFON">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_URUN_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="URUN" Type="Self.URUN" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="URUN">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_URUNGRUP_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="URUNGRUP" Type="Self.URUNGRUP" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="URUNGRUP">
-        <PropertyRef Name="DURUM" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_UYRUK_DURUM">
-    <End Role="DURUM" Type="Self.DURUM" Multiplicity="0..1" />
-    <End Role="UYRUK" Type="Self.UYRUK" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DURUM">
-        <PropertyRef Name="DURUMID" />
-      </Principal>
-      <Dependent Role="UYRUK">
         <PropertyRef Name="DURUM" />
       </Dependent>
     </ReferentialConstraint>
@@ -802,6 +680,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_ISLEM_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="ISLEM" Type="Self.ISLEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="ISLEM">
+        <PropertyRef Name="DURUM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_KASAHAREKET_ISLEM">
     <End Role="ISLEM" Type="Self.ISLEM" Multiplicity="0..1" />
     <End Role="KASAHAREKET" Type="Self.KASAHAREKET" Multiplicity="*" />
@@ -811,6 +701,18 @@
       </Principal>
       <Dependent Role="KASAHAREKET">
         <PropertyRef Name="ISLEMID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KASA_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="KASA" Type="Self.KASA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="KASA">
+        <PropertyRef Name="DURUM" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -826,6 +728,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_KASAHAREKET_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="KASAHAREKET" Type="Self.KASAHAREKET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="KASAHAREKET">
+        <PropertyRef Name="DURUM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_KASAHAREKET_PERSONEL">
     <End Role="PERSONEL" Type="Self.PERSONEL" Multiplicity="0..1" />
     <End Role="KASAHAREKET" Type="Self.KASAHAREKET" Multiplicity="*" />
@@ -835,6 +749,30 @@
       </Principal>
       <Dependent Role="KASAHAREKET">
         <PropertyRef Name="PERSONEL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KURLAR_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="KURLAR" Type="Self.KURLAR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="KURLAR">
+        <PropertyRef Name="DURUM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ODALAR_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="ODALAR" Type="Self.ODALAR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="ODALAR">
+        <PropertyRef Name="DURUM" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -850,6 +788,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_PERSONEL_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="PERSONEL" Type="Self.PERSONEL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="PERSONEL">
+        <PropertyRef Name="DURUM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_URUN_PERSONEL">
     <End Role="PERSONEL" Type="Self.PERSONEL" Multiplicity="0..1" />
     <End Role="URUN" Type="Self.URUN" Multiplicity="*" />
@@ -859,6 +809,66 @@
       </Principal>
       <Dependent Role="URUN">
         <PropertyRef Name="PERSONEL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REZERVASYON_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="REZERVASYON" Type="Self.REZERVASYON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="REZERVASYON">
+        <PropertyRef Name="DURUM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TELEFON_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="TELEFON" Type="Self.TELEFON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="TELEFON">
+        <PropertyRef Name="DURUM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_URUN_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="URUN" Type="Self.URUN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="URUN">
+        <PropertyRef Name="DURUM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_URUNGRUP_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="URUNGRUP" Type="Self.URUNGRUP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="URUNGRUP">
+        <PropertyRef Name="DURUM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UYRUK_DURUM">
+    <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+    <End Role="UYRUK" Type="Self.UYRUK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLDURUM">
+        <PropertyRef Name="DURUMID" />
+      </Principal>
+      <Dependent Role="UYRUK">
+        <PropertyRef Name="DURUM" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -883,7 +893,6 @@
     <EntitySet Name="CARIKONUKHAREKET" EntityType="Self.CARIKONUKHAREKET" />
     <EntitySet Name="CARITUR" EntityType="Self.CARITUR" />
     <EntitySet Name="DEPARTMAN" EntityType="Self.DEPARTMAN" />
-    <EntitySet Name="DURUM" EntityType="Self.DURUM" />
     <EntitySet Name="GOREV" EntityType="Self.GOREV" />
     <EntitySet Name="ISLEM" EntityType="Self.ISLEM" />
     <EntitySet Name="KASA" EntityType="Self.KASA" />
@@ -892,12 +901,14 @@
     <EntitySet Name="ODALAR" EntityType="Self.ODALAR" />
     <EntitySet Name="PERSONEL" EntityType="Self.PERSONEL" />
     <EntitySet Name="REZERVASYON" EntityType="Self.REZERVASYON" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TBLDURUM" EntityType="Self.TBLDURUM" />
     <EntitySet Name="TELEFON" EntityType="Self.TELEFON" />
     <EntitySet Name="URUN" EntityType="Self.URUN" />
     <EntitySet Name="URUNGRUP" EntityType="Self.URUNGRUP" />
     <EntitySet Name="UYRUK" EntityType="Self.UYRUK" />
     <AssociationSet Name="FK_BANKA_DURUM" Association="Self.FK_BANKA_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="BANKA" EntitySet="BANKA" />
     </AssociationSet>
     <AssociationSet Name="FK_BANKA_KURLAR" Association="Self.FK_BANKA_KURLAR">
@@ -909,7 +920,7 @@
       <End Role="BANKAHAREKET" EntitySet="BANKAHAREKET" />
     </AssociationSet>
     <AssociationSet Name="FK_BANKAHAREKET_DURUM" Association="Self.FK_BANKAHAREKET_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="BANKAHAREKET" EntitySet="BANKAHAREKET" />
     </AssociationSet>
     <AssociationSet Name="FK_BANKAHAREKET_ISLEM" Association="Self.FK_BANKAHAREKET_ISLEM">
@@ -921,7 +932,7 @@
       <End Role="BANKAHAREKET" EntitySet="BANKAHAREKET" />
     </AssociationSet>
     <AssociationSet Name="FK_BIRIM_DURUM" Association="Self.FK_BIRIM_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="BIRIM" EntitySet="BIRIM" />
     </AssociationSet>
     <AssociationSet Name="FK_URUN_BIRIM" Association="Self.FK_URUN_BIRIM">
@@ -933,7 +944,7 @@
       <End Role="CARI" EntitySet="CARI" />
     </AssociationSet>
     <AssociationSet Name="FK_CARI_DURUM" Association="Self.FK_CARI_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="CARI" EntitySet="CARI" />
     </AssociationSet>
     <AssociationSet Name="FK_CARI_UYRUK" Association="Self.FK_CARI_UYRUK">
@@ -953,7 +964,7 @@
       <End Role="REZERVASYON" EntitySet="REZERVASYON" />
     </AssociationSet>
     <AssociationSet Name="FK_CARIHAREKET_DURUM" Association="Self.FK_CARIHAREKET_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="CARIHAREKET" EntitySet="CARIHAREKET" />
     </AssociationSet>
     <AssociationSet Name="FK_CARIHAREKET_ISLEM" Association="Self.FK_CARIHAREKET_ISLEM">
@@ -969,7 +980,7 @@
       <End Role="CARIHAREKET" EntitySet="CARIHAREKET" />
     </AssociationSet>
     <AssociationSet Name="FK_CARIKONUKHAREKET_DURUM" Association="Self.FK_CARIKONUKHAREKET_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="CARIKONUKHAREKET" EntitySet="CARIKONUKHAREKET" />
     </AssociationSet>
     <AssociationSet Name="FK_CARIKONUKHAREKET_ODALAR" Association="Self.FK_CARIKONUKHAREKET_ODALAR">
@@ -981,11 +992,11 @@
       <End Role="CARIKONUKHAREKET" EntitySet="CARIKONUKHAREKET" />
     </AssociationSet>
     <AssociationSet Name="FK_CARITUR_DURUM" Association="Self.FK_CARITUR_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="CARITUR" EntitySet="CARITUR" />
     </AssociationSet>
     <AssociationSet Name="FK_DEPARTMAN_DURUM" Association="Self.FK_DEPARTMAN_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="DEPARTMAN" EntitySet="DEPARTMAN" />
     </AssociationSet>
     <AssociationSet Name="FK_GOREV_DEPARTMAN" Association="Self.FK_GOREV_DEPARTMAN">
@@ -997,76 +1008,76 @@
       <End Role="PERSONEL" EntitySet="PERSONEL" />
     </AssociationSet>
     <AssociationSet Name="FK_GOREV_DURUM" Association="Self.FK_GOREV_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="GOREV" EntitySet="GOREV" />
-    </AssociationSet>
-    <AssociationSet Name="FK_ISLEM_DURUM" Association="Self.FK_ISLEM_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="ISLEM" EntitySet="ISLEM" />
-    </AssociationSet>
-    <AssociationSet Name="FK_KASA_DURUM" Association="Self.FK_KASA_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="KASA" EntitySet="KASA" />
-    </AssociationSet>
-    <AssociationSet Name="FK_KASAHAREKET_DURUM" Association="Self.FK_KASAHAREKET_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="KASAHAREKET" EntitySet="KASAHAREKET" />
-    </AssociationSet>
-    <AssociationSet Name="FK_KURLAR_DURUM" Association="Self.FK_KURLAR_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="KURLAR" EntitySet="KURLAR" />
-    </AssociationSet>
-    <AssociationSet Name="FK_ODALAR_DURUM" Association="Self.FK_ODALAR_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="ODALAR" EntitySet="ODALAR" />
-    </AssociationSet>
-    <AssociationSet Name="FK_PERSONEL_DURUM" Association="Self.FK_PERSONEL_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="PERSONEL" EntitySet="PERSONEL" />
-    </AssociationSet>
-    <AssociationSet Name="FK_REZERVASYON_DURUM" Association="Self.FK_REZERVASYON_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="REZERVASYON" EntitySet="REZERVASYON" />
-    </AssociationSet>
-    <AssociationSet Name="FK_TELEFON_DURUM" Association="Self.FK_TELEFON_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="TELEFON" EntitySet="TELEFON" />
-    </AssociationSet>
-    <AssociationSet Name="FK_URUN_DURUM" Association="Self.FK_URUN_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="URUN" EntitySet="URUN" />
-    </AssociationSet>
-    <AssociationSet Name="FK_URUNGRUP_DURUM" Association="Self.FK_URUNGRUP_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="URUNGRUP" EntitySet="URUNGRUP" />
-    </AssociationSet>
-    <AssociationSet Name="FK_UYRUK_DURUM" Association="Self.FK_UYRUK_DURUM">
-      <End Role="DURUM" EntitySet="DURUM" />
-      <End Role="UYRUK" EntitySet="UYRUK" />
     </AssociationSet>
     <AssociationSet Name="FK_PERSONEL_GOREV" Association="Self.FK_PERSONEL_GOREV">
       <End Role="GOREV" EntitySet="GOREV" />
       <End Role="PERSONEL" EntitySet="PERSONEL" />
     </AssociationSet>
+    <AssociationSet Name="FK_ISLEM_DURUM" Association="Self.FK_ISLEM_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="ISLEM" EntitySet="ISLEM" />
+    </AssociationSet>
     <AssociationSet Name="FK_KASAHAREKET_ISLEM" Association="Self.FK_KASAHAREKET_ISLEM">
       <End Role="ISLEM" EntitySet="ISLEM" />
       <End Role="KASAHAREKET" EntitySet="KASAHAREKET" />
     </AssociationSet>
+    <AssociationSet Name="FK_KASA_DURUM" Association="Self.FK_KASA_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="KASA" EntitySet="KASA" />
+    </AssociationSet>
     <AssociationSet Name="FK_KASAHAREKET_KASA" Association="Self.FK_KASAHAREKET_KASA">
       <End Role="KASA" EntitySet="KASA" />
+      <End Role="KASAHAREKET" EntitySet="KASAHAREKET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KASAHAREKET_DURUM" Association="Self.FK_KASAHAREKET_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
       <End Role="KASAHAREKET" EntitySet="KASAHAREKET" />
     </AssociationSet>
     <AssociationSet Name="FK_KASAHAREKET_PERSONEL" Association="Self.FK_KASAHAREKET_PERSONEL">
       <End Role="PERSONEL" EntitySet="PERSONEL" />
       <End Role="KASAHAREKET" EntitySet="KASAHAREKET" />
     </AssociationSet>
+    <AssociationSet Name="FK_KURLAR_DURUM" Association="Self.FK_KURLAR_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="KURLAR" EntitySet="KURLAR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ODALAR_DURUM" Association="Self.FK_ODALAR_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="ODALAR" EntitySet="ODALAR" />
+    </AssociationSet>
     <AssociationSet Name="FK_REZERVASYON_ODALAR" Association="Self.FK_REZERVASYON_ODALAR">
       <End Role="ODALAR" EntitySet="ODALAR" />
       <End Role="REZERVASYON" EntitySet="REZERVASYON" />
     </AssociationSet>
+    <AssociationSet Name="FK_PERSONEL_DURUM" Association="Self.FK_PERSONEL_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="PERSONEL" EntitySet="PERSONEL" />
+    </AssociationSet>
     <AssociationSet Name="FK_URUN_PERSONEL" Association="Self.FK_URUN_PERSONEL">
       <End Role="PERSONEL" EntitySet="PERSONEL" />
       <End Role="URUN" EntitySet="URUN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REZERVASYON_DURUM" Association="Self.FK_REZERVASYON_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="REZERVASYON" EntitySet="REZERVASYON" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TELEFON_DURUM" Association="Self.FK_TELEFON_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="TELEFON" EntitySet="TELEFON" />
+    </AssociationSet>
+    <AssociationSet Name="FK_URUN_DURUM" Association="Self.FK_URUN_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="URUN" EntitySet="URUN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_URUNGRUP_DURUM" Association="Self.FK_URUNGRUP_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="URUNGRUP" EntitySet="URUNGRUP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UYRUK_DURUM" Association="Self.FK_UYRUK_DURUM">
+      <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+      <End Role="UYRUK" EntitySet="UYRUK" />
     </AssociationSet>
     <AssociationSet Name="FK_URUN_URUNGRUP" Association="Self.FK_URUN_URUNGRUP">
       <End Role="URUNGRUP" EntitySet="URUNGRUP" />

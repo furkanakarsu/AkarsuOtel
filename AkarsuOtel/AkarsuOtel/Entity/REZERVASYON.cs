@@ -27,7 +27,7 @@ namespace AkarsuOtel.Entity
         public Nullable<int> DURUM { get; set; }
     
         public virtual CARI CARI1 { get; set; }
-        public virtual DURUM DURUM1 { get; set; }
         public virtual ODALAR ODALAR { get; set; }
+        public virtual TBLDURUM TBLDURUM { get; set; }
     }
 }

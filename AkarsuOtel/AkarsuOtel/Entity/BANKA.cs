@@ -27,7 +27,7 @@ namespace AkarsuOtel.Entity
         public Nullable<int> KUR { get; set; }
         public Nullable<int> DURUM { get; set; }
     
-        public virtual DURUM DURUM1 { get; set; }
+        public virtual TBLDURUM TBLDURUM { get; set; }
         public virtual KURLAR KURLAR { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BANKAHAREKET> BANKAHAREKET { get; set; }
