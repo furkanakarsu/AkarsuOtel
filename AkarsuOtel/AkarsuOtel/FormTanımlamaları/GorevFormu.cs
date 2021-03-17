@@ -13,18 +13,24 @@ using DevExpress.XtraEditors;
 
 namespace AkarsuOtel.FormTanımlamaları
 {
-    public partial class DepartmanFormu : Form
+    public partial class GorevFormu : Form
     {
-        public DepartmanFormu()
+        public GorevFormu()
         {
             InitializeComponent();
         }
         OtelDBEntities db = new OtelDBEntities();
-        private void DepartmanFormu_Load(object sender, EventArgs e)
+        private void GorevFormu_Load(object sender, EventArgs e)
         {
-            db.DEPARTMAN.Load();
-            bindingSource1.DataSource = db.DEPARTMAN.Local;
-            repositoryItemLookUpEdit1.DataSource = (from x in db.TBLDURUM
+            db.GOREV.Load();
+            bindingSource1.DataSource = db.GOREV.Local;
+            repositoryItemLookUpEdit1.DataSource = (from x in db.DEPARTMAN
+                                                    select new
+                                                    {
+                                                        x.DEPARTMANID,
+                                                        x.DEPARTMANAD
+                                                    }).ToList();
+            repositoryItemLookUpEdit2.DataSource = (from x in db.TBLDURUM
                                                     select new
                                                     {
                                                         x.DURUMID,
@@ -40,7 +46,7 @@ namespace AkarsuOtel.FormTanımlamaları
             }
             catch (Exception)
             {
-                XtraMessageBox.Show("Hata oluştu tekrar deneyin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                XtraMessageBox.Show("Hata lütfen tekrar deneyin");
             }
         }
     }
