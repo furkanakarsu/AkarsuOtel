@@ -150,6 +150,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTanımlamaları\BankaFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanımlamaları\BankaFormu.Designer.cs">
+      <DependentUpon>BankaFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTanımlamaları\BirimForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,10 +198,25 @@
     <Compile Include="FormTanımlamaları\TanımlamaYonlendir.Designer.cs">
       <DependentUpon>TanımlamaYonlendir.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTanımlamaları\TelefonFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanımlamaları\TelefonFormu.Designer.cs">
+      <DependentUpon>TelefonFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTanımlamaları\UrunGrupFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanımlamaları\UrunGrupFormu.Designer.cs">
+      <DependentUpon>UrunGrupFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanımlamaları\BankaFormu.resx">
+      <DependentUpon>BankaFormu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTanımlamaları\BirimForm.resx">
       <DependentUpon>BirimForm.cs</DependentUpon>
@@ -217,6 +238,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTanımlamaları\TanımlamaYonlendir.resx">
       <DependentUpon>TanımlamaYonlendir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanımlamaları\TelefonFormu.resx">
+      <DependentUpon>TelefonFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanımlamaları\UrunGrupFormu.resx">
+      <DependentUpon>UrunGrupFormu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

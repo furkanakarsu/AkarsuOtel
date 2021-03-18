@@ -103,3 +103,6 @@ C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\Akar
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.KurFormu.resources
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.IslemlerFormu.resources
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.TanımlamaYonlendir.resources
+C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.TelefonFormu.resources
+C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.UrunGrupFormu.resources
+C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.BankaFormu.resources
