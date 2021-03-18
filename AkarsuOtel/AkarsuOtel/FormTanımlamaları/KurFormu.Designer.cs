@@ -129,6 +129,8 @@ namespace AkarsuOtel.FormTanımlamaları
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 546);
             this.Controls.Add(this.gridControl1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "KurFormu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kur Formu";

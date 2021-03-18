@@ -67,13 +67,26 @@ namespace AkarsuOtel.FormTanımlamaları
 
         private void panelControl9_Click(object sender, EventArgs e)
         {
-            //odalar formu
+            OdalarFormu oda = new OdalarFormu();
+            oda.Show();
         }
 
         private void panelControl11_Click(object sender, EventArgs e)
         {
             UrunGrupFormu urunGrup = new UrunGrupFormu();
             urunGrup.Show();
+        }
+
+        private void panelControl7_Click(object sender, EventArgs e)
+        {
+            KasalarFormu kasalar = new KasalarFormu();
+            kasalar.Show();
+        }
+
+        private void panelControl12_Click(object sender, EventArgs e)
+        {
+            CariTurlerFormu cari = new CariTurlerFormu();
+            cari.Show();
         }
     }
 }

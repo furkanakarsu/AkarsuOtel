@@ -162,6 +162,12 @@
     <Compile Include="FormTanımlamaları\BirimForm.Designer.cs">
       <DependentUpon>BirimForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTanımlamaları\CariTurlerFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanımlamaları\CariTurlerFormu.Designer.cs">
+      <DependentUpon>CariTurlerFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTanımlamaları\DepartmanFormu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,11 +192,23 @@
     <Compile Include="FormTanımlamaları\IslemlerFormu.Designer.cs">
       <DependentUpon>IslemlerFormu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTanımlamaları\KasalarFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanımlamaları\KasalarFormu.Designer.cs">
+      <DependentUpon>KasalarFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTanımlamaları\KurFormu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormTanımlamaları\KurFormu.Designer.cs">
       <DependentUpon>KurFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTanımlamaları\OdalarFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanımlamaları\OdalarFormu.Designer.cs">
+      <DependentUpon>OdalarFormu.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTanımlamaları\TanımlamaYonlendir.cs">
       <SubType>Form</SubType>
@@ -221,6 +239,9 @@
     <EmbeddedResource Include="FormTanımlamaları\BirimForm.resx">
       <DependentUpon>BirimForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTanımlamaları\CariTurlerFormu.resx">
+      <DependentUpon>CariTurlerFormu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTanımlamaları\DepartmanFormu.resx">
       <DependentUpon>DepartmanFormu.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,8 +254,14 @@
     <EmbeddedResource Include="FormTanımlamaları\IslemlerFormu.resx">
       <DependentUpon>IslemlerFormu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTanımlamaları\KasalarFormu.resx">
+      <DependentUpon>KasalarFormu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTanımlamaları\KurFormu.resx">
       <DependentUpon>KurFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanımlamaları\OdalarFormu.resx">
+      <DependentUpon>OdalarFormu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTanımlamaları\TanımlamaYonlendir.resx">
       <DependentUpon>TanımlamaYonlendir.cs</DependentUpon>
@@ -254,6 +281,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Entity\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -287,6 +315,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\close_32x32.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

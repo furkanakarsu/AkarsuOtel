@@ -228,6 +228,7 @@ namespace AkarsuOtel.FormTanımlamaları
             this.panelControl7.Name = "panelControl7";
             this.panelControl7.Size = new System.Drawing.Size(315, 150);
             this.panelControl7.TabIndex = 0;
+            this.panelControl7.Click += new System.EventHandler(this.panelControl7_Click);
             // 
             // labelControl7
             // 
@@ -342,6 +343,7 @@ namespace AkarsuOtel.FormTanımlamaları
             this.panelControl12.Name = "panelControl12";
             this.panelControl12.Size = new System.Drawing.Size(315, 150);
             this.panelControl12.TabIndex = 1;
+            this.panelControl12.Click += new System.EventHandler(this.panelControl12_Click);
             // 
             // labelControl12
             // 
@@ -357,7 +359,7 @@ namespace AkarsuOtel.FormTanımlamaları
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1384, 559);
+            this.ClientSize = new System.Drawing.Size(1388, 559);
             this.Controls.Add(this.panelControl10);
             this.Controls.Add(this.panelControl9);
             this.Controls.Add(this.panelControl6);

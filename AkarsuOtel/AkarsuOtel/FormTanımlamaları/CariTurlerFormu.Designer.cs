@@ -1,7 +1,7 @@
 ﻿
 namespace AkarsuOtel.FormTanımlamaları
 {
-    partial class UrunGrupFormu
+    partial class CariTurlerFormu
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,7 @@ namespace AkarsuOtel.FormTanımlamaları
             this.repositoryItemLookUpEdit2,
             this.repositoryItemLookUpEdit3});
             this.gridControl1.Size = new System.Drawing.Size(922, 597);
-            this.gridControl1.TabIndex = 4;
+            this.gridControl1.TabIndex = 8;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -78,8 +78,8 @@ namespace AkarsuOtel.FormTanımlamaları
             // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "Grup Adı";
-            this.gridColumn2.FieldName = "GRUPADI";
+            this.gridColumn2.Caption = "Cari Ad";
+            this.gridColumn2.FieldName = "CARITURAD";
             this.gridColumn2.MinWidth = 25;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -111,7 +111,9 @@ namespace AkarsuOtel.FormTanımlamaları
             this.repositoryItemLookUpEdit2.AutoHeight = false;
             this.repositoryItemLookUpEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLookUpEdit2.DisplayMember = "KURAD";
             this.repositoryItemLookUpEdit2.Name = "repositoryItemLookUpEdit2";
+            this.repositoryItemLookUpEdit2.ValueMember = "KURID";
             // 
             // repositoryItemLookUpEdit3
             // 
@@ -120,7 +122,7 @@ namespace AkarsuOtel.FormTanımlamaları
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEdit3.Name = "repositoryItemLookUpEdit3";
             // 
-            // UrunGrupFormu
+            // CariTurlerFormu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,10 +130,10 @@ namespace AkarsuOtel.FormTanımlamaları
             this.Controls.Add(this.gridControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "UrunGrupFormu";
+            this.Name = "CariTurlerFormu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UrunGrupFormu";
-            this.Load += new System.EventHandler(this.UrunGrupFormu_Load);
+            this.Text = "Cari Türleri";
+            this.Load += new System.EventHandler(this.CariTurlerFormu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

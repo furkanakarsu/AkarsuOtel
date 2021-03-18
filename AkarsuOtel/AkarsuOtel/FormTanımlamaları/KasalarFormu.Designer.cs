@@ -1,7 +1,7 @@
 ﻿
 namespace AkarsuOtel.FormTanımlamaları
 {
-    partial class UrunGrupFormu
+    partial class KasalarFormu
     {
         /// <summary>
         /// Required designer variable.
@@ -34,15 +34,18 @@ namespace AkarsuOtel.FormTanımlamaları
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemLookUpEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.repositoryItemLookUpEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.repositoryItemLookUpEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +61,7 @@ namespace AkarsuOtel.FormTanımlamaları
             this.repositoryItemLookUpEdit2,
             this.repositoryItemLookUpEdit3});
             this.gridControl1.Size = new System.Drawing.Size(922, 597);
-            this.gridControl1.TabIndex = 4;
+            this.gridControl1.TabIndex = 6;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -69,6 +72,9 @@ namespace AkarsuOtel.FormTanımlamaları
             this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn2,
+            this.gridColumn1,
+            this.gridColumn4,
+            this.gridColumn5,
             this.gridColumn3});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
@@ -78,13 +84,52 @@ namespace AkarsuOtel.FormTanımlamaları
             // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "Grup Adı";
-            this.gridColumn2.FieldName = "GRUPADI";
+            this.gridColumn2.Caption = "Kasa Adı";
+            this.gridColumn2.FieldName = "KASAADI";
             this.gridColumn2.MinWidth = 25;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 0;
             this.gridColumn2.Width = 94;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Bakiye";
+            this.gridColumn1.FieldName = "BAKIYE";
+            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 1;
+            this.gridColumn1.Width = 94;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "Gıren";
+            this.gridColumn4.FieldName = "GIREN";
+            this.gridColumn4.MinWidth = 25;
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 2;
+            this.gridColumn4.Width = 94;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Çıkan";
+            this.gridColumn5.FieldName = "CIKAN";
+            this.gridColumn5.MinWidth = 25;
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 3;
+            this.gridColumn5.Width = 94;
+            // 
+            // repositoryItemLookUpEdit2
+            // 
+            this.repositoryItemLookUpEdit2.AutoHeight = false;
+            this.repositoryItemLookUpEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLookUpEdit2.DisplayMember = "KURAD";
+            this.repositoryItemLookUpEdit2.Name = "repositoryItemLookUpEdit2";
+            this.repositoryItemLookUpEdit2.ValueMember = "KURID";
             // 
             // gridColumn3
             // 
@@ -94,7 +139,7 @@ namespace AkarsuOtel.FormTanımlamaları
             this.gridColumn3.MinWidth = 25;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 1;
+            this.gridColumn3.VisibleIndex = 4;
             this.gridColumn3.Width = 94;
             // 
             // repositoryItemLookUpEdit1
@@ -106,13 +151,6 @@ namespace AkarsuOtel.FormTanımlamaları
             this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
             this.repositoryItemLookUpEdit1.ValueMember = "DURUMID";
             // 
-            // repositoryItemLookUpEdit2
-            // 
-            this.repositoryItemLookUpEdit2.AutoHeight = false;
-            this.repositoryItemLookUpEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemLookUpEdit2.Name = "repositoryItemLookUpEdit2";
-            // 
             // repositoryItemLookUpEdit3
             // 
             this.repositoryItemLookUpEdit3.AutoHeight = false;
@@ -120,7 +158,7 @@ namespace AkarsuOtel.FormTanımlamaları
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEdit3.Name = "repositoryItemLookUpEdit3";
             // 
-            // UrunGrupFormu
+            // KasalarFormu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,15 +166,15 @@ namespace AkarsuOtel.FormTanımlamaları
             this.Controls.Add(this.gridControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "UrunGrupFormu";
+            this.Name = "KasalarFormu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UrunGrupFormu";
-            this.Load += new System.EventHandler(this.UrunGrupFormu_Load);
+            this.Text = "Kasalar";
+            this.Load += new System.EventHandler(this.KasalarFormu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit3)).EndInit();
             this.ResumeLayout(false);
 
@@ -148,6 +186,9 @@ namespace AkarsuOtel.FormTanımlamaları
         private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit2;
