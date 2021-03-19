@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cariler\CariKartFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cariler\CariKartFormu.Designer.cs">
+      <DependentUpon>CariKartFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entity\BANKA.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -230,6 +236,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cariler\CariKartFormu.resx">
+      <DependentUpon>CariKartFormu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -315,6 +324,24 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\card_32x32.png" />
+    <None Include="Resources\contact_32x322.png" />
+    <None Include="Resources\team_32x32.png" />
+    <None Include="Resources\notes_32x32.png" />
+    <None Include="Resources\apply_32x32.png" />
+    <None Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\newmail_32x32.png" />
+    <None Include="Resources\phone_32x32.png" />
+    <None Include="Resources\geopointmap_32x32.png" />
+    <None Include="Resources\calculatesheet_32x32.png" />
+    <None Include="Resources\knowledgebasearticle_32x32.png" />
+    <None Include="Resources\info_32x32.png" />
+    <None Include="Resources\new_32x32.png" />
+    <None Include="Resources\contact_32x321.png" />
+    <None Include="Resources\bolocalization_32x32.png" />
+    <None Include="Resources\contact_32x32.png" />
+    <None Include="Resources\boperson_32x32.png" />
+    <None Include="Resources\boperson_16x16.png" />
     <None Include="Resources\close_32x32.png" />
   </ItemGroup>
   <ItemGroup>

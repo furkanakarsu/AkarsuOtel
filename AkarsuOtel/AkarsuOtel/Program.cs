@@ -1,4 +1,5 @@
-﻿using AkarsuOtel.FormTanımlamaları;
+﻿using AkarsuOtel.Cariler;
+using AkarsuOtel.FormTanımlamaları;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace AkarsuOtel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TanımlamaYonlendir());
+            Application.Run(new CariKartFormu());
         }
     }
 }
