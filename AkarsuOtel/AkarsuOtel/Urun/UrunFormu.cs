@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
 using AkarsuOtel.Entity;
+using DevExpress.XtraEditors;
+
 namespace AkarsuOtel.Urun
 {
     public partial class UrunFormu : Form
@@ -50,6 +52,27 @@ namespace AkarsuOtel.Urun
             //                                          x.BIRIMAD
             //                                      }).ToList();
 
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            URUN u = new URUN();
+            u.BIRIM = int.Parse(lookBirimSec.EditValue.ToString());
+            u.FIYAT = int.Parse(txtFiyat.Text);
+            u.KDV = byte.Parse(cmbKDV.Text);
+            u.DURUM = 1;
+            u.URUNAD = txtUrunAd.Text;
+            u.URUNGRUPID = int.Parse(lookUrunGrup.EditValue.ToString());
+            u.KUR = int.Parse(lookParaBirimi.EditValue.ToString());
+            db.URUN.Add(u);
+            db.SaveChanges();
+            XtraMessageBox.Show($"Eklenen Ürün:{u.URUNAD} \nSisteme Ekleme:BAŞARILI","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+        }
+
+        private void btnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

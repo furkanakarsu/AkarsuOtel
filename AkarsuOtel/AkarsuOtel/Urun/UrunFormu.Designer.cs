@@ -38,7 +38,6 @@ namespace AkarsuOtel.Urun
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.lookKDV = new DevExpress.XtraEditors.LookUpEdit();
             this.lookUrunGrup = new DevExpress.XtraEditors.LookUpEdit();
             this.lookParaBirimi = new DevExpress.XtraEditors.LookUpEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
@@ -58,11 +57,11 @@ namespace AkarsuOtel.Urun
             this.rchAciklama = new System.Windows.Forms.RichTextBox();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.btnVazgec = new DevExpress.XtraEditors.SimpleButton();
+            this.cmbKDV = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookKDV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUrunGrup.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookParaBirimi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
@@ -79,6 +78,7 @@ namespace AkarsuOtel.Urun
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbKDV.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -123,7 +123,7 @@ namespace AkarsuOtel.Urun
             // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.lookKDV);
+            this.groupControl2.Controls.Add(this.cmbKDV);
             this.groupControl2.Controls.Add(this.lookUrunGrup);
             this.groupControl2.Controls.Add(this.lookParaBirimi);
             this.groupControl2.Controls.Add(this.pictureEdit1);
@@ -190,25 +190,12 @@ namespace AkarsuOtel.Urun
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(683, 73);
+            this.labelControl12.Location = new System.Drawing.Point(683, 72);
             this.labelControl12.Margin = new System.Windows.Forms.Padding(8);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(58, 22);
             this.labelControl12.TabIndex = 4;
             this.labelControl12.Text = "KDV %";
-            // 
-            // lookKDV
-            // 
-            this.lookKDV.Location = new System.Drawing.Point(763, 70);
-            this.lookKDV.Margin = new System.Windows.Forms.Padding(8);
-            this.lookKDV.Name = "lookKDV";
-            this.lookKDV.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lookKDV.Properties.Appearance.Options.UseFont = true;
-            this.lookKDV.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookKDV.Properties.NullText = "KDV Oranı Seçiniz";
-            this.lookKDV.Size = new System.Drawing.Size(300, 28);
-            this.lookKDV.TabIndex = 18;
             // 
             // lookUrunGrup
             // 
@@ -243,7 +230,7 @@ namespace AkarsuOtel.Urun
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = global::AkarsuOtel.Properties.Resources.summary_32x32;
-            this.pictureEdit1.Location = new System.Drawing.Point(621, 72);
+            this.pictureEdit1.Location = new System.Drawing.Point(621, 71);
             this.pictureEdit1.Margin = new System.Windows.Forms.Padding(8);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -429,6 +416,7 @@ namespace AkarsuOtel.Urun
             this.btnKaydet.Size = new System.Drawing.Size(154, 51);
             this.btnKaydet.TabIndex = 13;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // btnVazgec
             // 
@@ -438,6 +426,24 @@ namespace AkarsuOtel.Urun
             this.btnVazgec.Size = new System.Drawing.Size(154, 51);
             this.btnVazgec.TabIndex = 14;
             this.btnVazgec.Text = "Vazgeç";
+            this.btnVazgec.Click += new System.EventHandler(this.btnVazgec_Click);
+            // 
+            // cmbKDV
+            // 
+            this.cmbKDV.Location = new System.Drawing.Point(764, 71);
+            this.cmbKDV.Name = "cmbKDV";
+            this.cmbKDV.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbKDV.Properties.Appearance.Options.UseFont = true;
+            this.cmbKDV.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbKDV.Properties.Items.AddRange(new object[] {
+            "1",
+            "8",
+            "10",
+            "18",
+            "20"});
+            this.cmbKDV.Size = new System.Drawing.Size(299, 24);
+            this.cmbKDV.TabIndex = 18;
             // 
             // UrunFormu
             // 
@@ -461,7 +467,6 @@ namespace AkarsuOtel.Urun
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookKDV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUrunGrup.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookParaBirimi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
@@ -479,6 +484,7 @@ namespace AkarsuOtel.Urun
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbKDV.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -496,7 +502,6 @@ namespace AkarsuOtel.Urun
         private DevExpress.XtraEditors.PictureEdit pictureEdit11;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.LookUpEdit lookKDV;
         private DevExpress.XtraEditors.LookUpEdit lookUrunGrup;
         private DevExpress.XtraEditors.LookUpEdit lookParaBirimi;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
@@ -514,5 +519,6 @@ namespace AkarsuOtel.Urun
         private System.Windows.Forms.RichTextBox rchAciklama;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.SimpleButton btnVazgec;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbKDV;
     }
 }
