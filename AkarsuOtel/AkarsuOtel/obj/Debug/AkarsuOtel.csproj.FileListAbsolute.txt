@@ -111,3 +111,4 @@ C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\Akar
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.FormTanımlamaları.CariTurlerFormu.resources
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.Cariler.CariKartFormu.resources
 C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.Urun.UrunFormu.resources
+C:\Users\furka\OneDrive\Masaüstü\MyRepository\Otel Rezervasyon\AkarsuOtel\AkarsuOtel\obj\Debug\AkarsuOtel.Personel.PersonelFormu.resources
