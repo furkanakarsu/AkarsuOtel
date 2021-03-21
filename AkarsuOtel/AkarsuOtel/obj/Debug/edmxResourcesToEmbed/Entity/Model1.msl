@@ -41,6 +41,7 @@
     <EntitySetMapping Name="CARI">
       <EntityTypeMapping TypeName="OtelDBModel.CARI">
         <MappingFragment StoreEntitySet="CARI">
+          <ScalarProperty Name="VERGINO" ColumnName="VERGINO" />
           <ScalarProperty Name="CARIID" ColumnName="CARIID" />
           <ScalarProperty Name="CARIADSOYAD" ColumnName="CARIADSOYAD" />
           <ScalarProperty Name="CARIADRES" ColumnName="CARIADRES" />

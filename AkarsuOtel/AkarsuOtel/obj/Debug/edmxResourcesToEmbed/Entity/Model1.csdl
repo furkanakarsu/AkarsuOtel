@@ -68,6 +68,7 @@
     <NavigationProperty Name="CARIHAREKET" Relationship="Self.FK_CARIHAREKET_CARI" FromRole="CARI" ToRole="CARIHAREKET" />
     <NavigationProperty Name="CARIKONUKHAREKET" Relationship="Self.FK_CARIKONUKHAREKET_CARI" FromRole="CARI" ToRole="CARIKONUKHAREKET" />
     <NavigationProperty Name="REZERVASYON" Relationship="Self.FK_REZERVASYON_CARI" FromRole="CARI" ToRole="REZERVASYON" />
+    <Property Name="VERGINO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="CARIHAREKET">
     <Key>

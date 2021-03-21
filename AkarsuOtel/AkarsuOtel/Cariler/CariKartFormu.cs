@@ -44,19 +44,21 @@ namespace AkarsuOtel.Cariler
 
             try
             {
-                //todo:Vergi numarası SQL e eklenecek.
-                //todo:53-54. satır hata veriyor.
                 cari.ACIKLAMA = rchAciklama.Text;
                 cari.CARIADRES = rchAdres.Text;
                 cari.TELEFON = txtTelefon.Text;
                 cari.CARIADSOYAD = txtAdSoyad.Text;
-                cari.CARITUR = int.Parse(lookCari.EditValue.ToString());
+                cari.VERGINO = txtVergiNo.Text;
+               cari.CARITUR = int.Parse(lookCari.EditValue.ToString());
                 cari.UYRUK = int.Parse(lookUlke.EditValue.ToString());
                 cari.DURUM = 1;
                 cari.MAIL = txtMail.Text;
                 cari.VERGIDAIRESI = txtVergiDairesi.Text;
                 cari.CARITC = txtTc.Text;
                 cari.YETKILI = txtYetkiliAd.Text;
+               // cari.KIMLIKFOTO1 = @"C:\Users\furka\OneDrive\Masaüstü\Kimlik_Bilgileri\"+txtAdSoyad+"_KimlikOnYuz.jpg";
+               // cari.KIMLIKFOTO2 = @"C:\Users\furka\OneDrive\Masaüstü\Kimlik_Bilgileri\" + txtAdSoyad + "_KimlikArkaYuz.jpg";
+
                 db.CARI.Add(cari);
                 db.SaveChanges();
                 XtraMessageBox.Show("Cari bilgileri sisteme kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -65,6 +67,11 @@ namespace AkarsuOtel.Cariler
             {
                 XtraMessageBox.Show("Hata lütfen ilgili alanları kontrol edip tekrar deneyin");
             }
+        }
+
+        private void btnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

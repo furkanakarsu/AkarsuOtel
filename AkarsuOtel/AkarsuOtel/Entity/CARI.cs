@@ -37,6 +37,7 @@ namespace AkarsuOtel.Entity
         public Nullable<int> UYRUK { get; set; }
         public Nullable<decimal> BAKIYE { get; set; }
         public Nullable<int> DURUM { get; set; }
+        public string VERGINO { get; set; }
     
         public virtual CARITUR CARITUR1 { get; set; }
         public virtual TBLDURUM TBLDURUM { get; set; }

@@ -18,7 +18,7 @@ namespace AkarsuOtel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CariKartFormu());
+            Application.Run(new Urun.UrunFormu());
         }
     }
 }

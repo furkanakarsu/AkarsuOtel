@@ -43,6 +43,7 @@
     <Property Name="CARIADRES" Type="varchar" MaxLength="100" />
     <Property Name="CARITC" Type="char" MaxLength="11" />
     <Property Name="VERGIDAIRESI" Type="varchar" MaxLength="30" />
+    <Property Name="VERGINO" Type="varchar" MaxLength="20" />
     <Property Name="TELEFON" Type="varchar" MaxLength="20" />
     <Property Name="MAIL" Type="varchar" MaxLength="50" />
     <Property Name="KIMLIKFOTO1" Type="varchar" MaxLength="100" />

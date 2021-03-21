@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="OtelDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="OtelDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="BANKA">
           <Key>
             <PropertyRef Name="BANKAID" />
@@ -48,6 +48,7 @@
           <Property Name="CARIADRES" Type="varchar" MaxLength="100" />
           <Property Name="CARITC" Type="char" MaxLength="11" />
           <Property Name="VERGIDAIRESI" Type="varchar" MaxLength="30" />
+          <Property Name="VERGINO" Type="varchar" MaxLength="20" />
           <Property Name="TELEFON" Type="varchar" MaxLength="20" />
           <Property Name="MAIL" Type="varchar" MaxLength="50" />
           <Property Name="KIMLIKFOTO1" Type="varchar" MaxLength="100" />
@@ -1001,8 +1002,7 @@
             <End Role="UYRUK" EntitySet="UYRUK" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="OtelDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1074,6 +1074,7 @@
           <NavigationProperty Name="CARIHAREKET" Relationship="Self.FK_CARIHAREKET_CARI" FromRole="CARI" ToRole="CARIHAREKET" />
           <NavigationProperty Name="CARIKONUKHAREKET" Relationship="Self.FK_CARIKONUKHAREKET_CARI" FromRole="CARI" ToRole="CARIKONUKHAREKET" />
           <NavigationProperty Name="REZERVASYON" Relationship="Self.FK_REZERVASYON_CARI" FromRole="CARI" ToRole="REZERVASYON" />
+          <Property Name="VERGINO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="CARIHAREKET">
           <Key>
@@ -2136,6 +2137,7 @@
           <EntitySetMapping Name="CARI">
             <EntityTypeMapping TypeName="OtelDBModel.CARI">
               <MappingFragment StoreEntitySet="CARI">
+                <ScalarProperty Name="VERGINO" ColumnName="VERGINO" />
                 <ScalarProperty Name="CARIID" ColumnName="CARIID" />
                 <ScalarProperty Name="CARIADSOYAD" ColumnName="CARIADSOYAD" />
                 <ScalarProperty Name="CARIADRES" ColumnName="CARIADRES" />

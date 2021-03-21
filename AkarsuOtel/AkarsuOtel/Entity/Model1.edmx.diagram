@@ -21,7 +21,7 @@
         <EntityTypeShape EntityType="OtelDBModel.ODALAR" Width="1.5" PointX="3" PointY="43.375" IsExpanded="true" />
         <EntityTypeShape EntityType="OtelDBModel.PERSONEL" Width="1.5" PointX="7.5" PointY="25.375" IsExpanded="true" />
         <EntityTypeShape EntityType="OtelDBModel.REZERVASYON" Width="1.5" PointX="7.5" PointY="38.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="OtelDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelDBModel.sysdiagrams" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
         <EntityTypeShape EntityType="OtelDBModel.TBLDURUM" Width="1.5" PointX="0.75" PointY="27.75" IsExpanded="true" />
         <EntityTypeShape EntityType="OtelDBModel.TELEFON" Width="1.5" PointX="3" PointY="47.25" IsExpanded="true" />
         <EntityTypeShape EntityType="OtelDBModel.URUN" Width="1.5" PointX="8.25" PointY="32.375" IsExpanded="true" />

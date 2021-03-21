@@ -31,8 +31,6 @@ namespace AkarsuOtel.Cariler
         {
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
-            this.btnVazgec = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
@@ -53,6 +51,8 @@ namespace AkarsuOtel.Cariler
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.rchAciklama = new System.Windows.Forms.RichTextBox();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
+            this.btnVazgec = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.lookUlke = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
@@ -121,7 +121,7 @@ namespace AkarsuOtel.Cariler
             this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(6);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1187, 251);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1187, 362);
             this.xtraTabControl1.TabIndex = 1;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -135,27 +135,8 @@ namespace AkarsuOtel.Cariler
             this.xtraTabPage1.ImageOptions.Image = global::AkarsuOtel.Properties.Resources.info_32x32;
             this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(5);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1183, 206);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1183, 317);
             this.xtraTabPage1.Text = "Bilgiler";
-            // 
-            // btnKaydet
-            // 
-            this.btnKaydet.ImageOptions.Image = global::AkarsuOtel.Properties.Resources.apply_32x32;
-            this.btnKaydet.Location = new System.Drawing.Point(903, 470);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(154, 51);
-            this.btnKaydet.TabIndex = 1;
-            this.btnKaydet.Text = "Kaydet";
-            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
-            // 
-            // btnVazgec
-            // 
-            this.btnVazgec.ImageOptions.Image = global::AkarsuOtel.Properties.Resources.cancel_32x32;
-            this.btnVazgec.Location = new System.Drawing.Point(1095, 470);
-            this.btnVazgec.Name = "btnVazgec";
-            this.btnVazgec.Size = new System.Drawing.Size(154, 51);
-            this.btnVazgec.TabIndex = 1;
-            this.btnVazgec.Text = "Vazgeç";
             // 
             // groupControl2
             // 
@@ -195,10 +176,10 @@ namespace AkarsuOtel.Cariler
             // 
             // rchAdres
             // 
-            this.rchAdres.Location = new System.Drawing.Point(208, 15);
+            this.rchAdres.Location = new System.Drawing.Point(207, 5);
             this.rchAdres.Name = "rchAdres";
             this.rchAdres.Size = new System.Drawing.Size(908, 54);
-            this.rchAdres.TabIndex = 6;
+            this.rchAdres.TabIndex = 13;
             this.rchAdres.Text = "";
             // 
             // groupControl3
@@ -221,7 +202,7 @@ namespace AkarsuOtel.Cariler
             this.txtMail.Margin = new System.Windows.Forms.Padding(8);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(266, 22);
-            this.txtMail.TabIndex = 8;
+            this.txtMail.TabIndex = 15;
             // 
             // txtTelefon
             // 
@@ -229,7 +210,7 @@ namespace AkarsuOtel.Cariler
             this.txtTelefon.Margin = new System.Windows.Forms.Padding(8);
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(301, 22);
-            this.txtTelefon.TabIndex = 7;
+            this.txtTelefon.TabIndex = 14;
             // 
             // labelControl3
             // 
@@ -288,7 +269,7 @@ namespace AkarsuOtel.Cariler
             this.xtraTabPage2.ImageOptions.Image = global::AkarsuOtel.Properties.Resources.knowledgebasearticle_32x32;
             this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(5);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1183, 262);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1183, 317);
             this.xtraTabPage2.Text = "Dökümanlar";
             // 
             // groupControl5
@@ -368,8 +349,28 @@ namespace AkarsuOtel.Cariler
             this.xtraTabPage3.ImageOptions.Image = global::AkarsuOtel.Properties.Resources.calculatesheet_32x32;
             this.xtraTabPage3.Margin = new System.Windows.Forms.Padding(5);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(1183, 262);
+            this.xtraTabPage3.Size = new System.Drawing.Size(1183, 317);
             this.xtraTabPage3.Text = "Hesap Özeti";
+            // 
+            // btnKaydet
+            // 
+            this.btnKaydet.ImageOptions.Image = global::AkarsuOtel.Properties.Resources.apply_32x32;
+            this.btnKaydet.Location = new System.Drawing.Point(909, 584);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(154, 51);
+            this.btnKaydet.TabIndex = 11;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            // 
+            // btnVazgec
+            // 
+            this.btnVazgec.ImageOptions.Image = global::AkarsuOtel.Properties.Resources.cancel_32x32;
+            this.btnVazgec.Location = new System.Drawing.Point(1097, 584);
+            this.btnVazgec.Name = "btnVazgec";
+            this.btnVazgec.Size = new System.Drawing.Size(154, 51);
+            this.btnVazgec.TabIndex = 12;
+            this.btnVazgec.Text = "Vazgeç";
+            this.btnVazgec.Click += new System.EventHandler(this.btnVazgec_Click);
             // 
             // groupControl1
             // 
@@ -429,7 +430,7 @@ namespace AkarsuOtel.Cariler
             // 
             // lookCari
             // 
-            this.lookCari.Location = new System.Drawing.Point(219, 45);
+            this.lookCari.Location = new System.Drawing.Point(218, 45);
             this.lookCari.Margin = new System.Windows.Forms.Padding(8);
             this.lookCari.Name = "lookCari";
             this.lookCari.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -438,7 +439,7 @@ namespace AkarsuOtel.Cariler
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookCari.Properties.DisplayMember = "CARITURAD";
             this.lookCari.Properties.NullText = "Tür Seçiniz";
-            this.lookCari.Properties.ValueMember = "CARUTURID";
+            this.lookCari.Properties.ValueMember = "CARITURID";
             this.lookCari.Size = new System.Drawing.Size(301, 28);
             this.lookCari.TabIndex = 2;
             // 
@@ -523,7 +524,7 @@ namespace AkarsuOtel.Cariler
             this.txtTc.Margin = new System.Windows.Forms.Padding(8);
             this.txtTc.Name = "txtTc";
             this.txtTc.Size = new System.Drawing.Size(266, 22);
-            this.txtTc.TabIndex = 5;
+            this.txtTc.TabIndex = 7;
             // 
             // txtVergiNo
             // 
@@ -589,7 +590,7 @@ namespace AkarsuOtel.Cariler
             this.txtYetkiliAd.Margin = new System.Windows.Forms.Padding(8);
             this.txtYetkiliAd.Name = "txtYetkiliAd";
             this.txtYetkiliAd.Size = new System.Drawing.Size(301, 22);
-            this.txtYetkiliAd.TabIndex = 4;
+            this.txtYetkiliAd.TabIndex = 6;
             // 
             // labelControl7
             // 
@@ -650,7 +651,7 @@ namespace AkarsuOtel.Cariler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1305, 534);
+            this.ClientSize = new System.Drawing.Size(1305, 661);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.btnVazgec);

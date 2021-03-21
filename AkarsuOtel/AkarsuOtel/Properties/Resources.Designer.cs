@@ -73,6 +73,16 @@ namespace AkarsuOtel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap barcode2_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("barcode2_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bolocalization_32x32 {
             get {
                 object obj = ResourceManager.GetObject("bolocalization_32x32", resourceCulture);
@@ -96,6 +106,16 @@ namespace AkarsuOtel.Properties {
         internal static System.Drawing.Bitmap boperson_32x32 {
             get {
                 object obj = ResourceManager.GetObject("boperson_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boproduct_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("boproduct_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +193,26 @@ namespace AkarsuOtel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap currency_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("currency_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap currency_32x321 {
+            get {
+                object obj = ResourceManager.GetObject("currency_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap geopointmap_32x32 {
             get {
                 object obj = ResourceManager.GetObject("geopointmap_32x32", resourceCulture);
@@ -186,6 +226,16 @@ namespace AkarsuOtel.Properties {
         internal static System.Drawing.Bitmap info_32x32 {
             get {
                 object obj = ResourceManager.GetObject("info_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertequationcaption_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("insertequationcaption_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +283,29 @@ namespace AkarsuOtel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap packageproduct_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("packageproduct_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap phone_32x32 {
             get {
                 object obj = ResourceManager.GetObject("phone_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap summary_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("summary_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
